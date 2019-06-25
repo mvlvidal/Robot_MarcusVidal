@@ -1,0 +1,11 @@
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\bin\Release\netstandard2.0\MarcusVidal.Robo.deps.json
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\bin\Release\netstandard2.0\MarcusVidal.Robo.dll
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\bin\Release\netstandard2.0\MarcusVidal.Robo.pdb
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\bin\Release\netstandard2.0\robocode.dll
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\bin\Release\netstandard2.0\robocode.xml
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.csproj.CoreCompileInputs.cache
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.AssemblyInfoInputs.cache
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.AssemblyInfo.cs
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.csproj.CopyComplete
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robo.dll
+C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robo.pdb
