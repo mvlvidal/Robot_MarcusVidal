@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace MarcusVidal.Robo
 {
-    public class Robot_MVidal : Robot
+    public class Robot_MVidal : AdvancedRobot
     {
 
         public override void Run()
@@ -14,46 +14,53 @@ namespace MarcusVidal.Robo
 
             while (true)
             {
+                Ahead(100);
+                TurnRight(90);
+                Ahead(100);
+                TurnRight(90);
+                Ahead(100);
+                TurnLeft(90);
+                Ahead(100);
+                TurnRight(90);
+                Ahead(100);
+                TurnLeft(90);              
                 Scan();
-                TurnRight(90);
-                Ahead(150);
-                TurnRight(90);
-                Ahead(150);
-
+                Execute();
             }
             
         }
 
         public override void OnHitWall(HitWallEvent evento)
         {
+            TurnRight(50);
             Back(150);
         }
 
-        public override void OnBulletHit(BulletHitEvent evento)
+        public override void OnBulletHit(BulletHitEvent evnt)
         {
-            Fire(1);
+            base.OnBulletHit(evnt);
         }
 
         public override void OnScannedRobot(ScannedRobotEvent evnt)
         {
             double anguloInimigo = evnt.Bearing;
 
-                if (anguloInimigo < 180)
-                {
-                    Stop();
-                    TurnGunLeft(GunHeading + anguloInimigo);
-                }
-                else
-                {
-                    Stop();
-                    TurnGunRight(GunHeading + anguloInimigo); 
-                }
+            Fire(1);
+            Scan();
 
-                if (GunHeat < 1)
-                {
-                    Fire(2);
-                }
+            if(GunHeading > anguloInimigo && (GunHeading - anguloInimigo) <= 180)
+            {
+                TurnGunLeft(GunHeading - anguloInimigo);
+                Fire(1);
+            }
 
+            if(GunHeading < anguloInimigo && (GunHeading + anguloInimigo) <= 180)
+            {
+                TurnGunRight(GunHeading + anguloInimigo);
+                Fire(1);
+            }
+
+            Scan();
 
         }
 
@@ -71,5 +78,15 @@ namespace MarcusVidal.Robo
             Fire(3);
 
         }
+
+        public int detectaEnergia(int energiaInimigo) {
+
+            //TODO fazer comparações para retornar a intensidade do tiro
+
+            int resultado = 0;
+
+            return resultado;
+        }
+
     }
 }
