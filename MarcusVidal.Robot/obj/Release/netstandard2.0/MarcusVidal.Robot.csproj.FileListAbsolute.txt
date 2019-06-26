@@ -9,3 +9,14 @@ C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\net
 C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.csproj.CopyComplete
 C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robo.dll
 C:\Users\mvidal\source\repos\MarcusVidal.Robot\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robo.pdb
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\bin\Release\netstandard2.0\MarcusVidal.Robo.deps.json
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\bin\Release\netstandard2.0\MarcusVidal.Robo.dll
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\bin\Release\netstandard2.0\MarcusVidal.Robo.pdb
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\bin\Release\netstandard2.0\robocode.dll
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\bin\Release\netstandard2.0\robocode.xml
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.csproj.CoreCompileInputs.cache
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.AssemblyInfoInputs.cache
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.AssemblyInfo.cs
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robot.csproj.CopyComplete
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robo.dll
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Release\netstandard2.0\MarcusVidal.Robo.pdb

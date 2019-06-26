@@ -1,5 +1,6 @@
 ﻿using System;
 using Robocode;
+using Robocode.Util;
 using System.Drawing;
 
 namespace MarcusVidal.Robo
@@ -13,19 +14,23 @@ namespace MarcusVidal.Robo
                   
 
             while (true)
-            {
-                Ahead(100);
-                TurnRight(90);
-                Ahead(100);
-                TurnRight(90);
-                Ahead(100);
-                TurnLeft(90);
-                Ahead(100);
-                TurnRight(90);
-                Ahead(100);
-                TurnLeft(90);              
-                Scan();
-                Execute();
+            {                           
+                
+                for (int i = 0; i < 5; i++)
+                {
+                    Ahead(100);
+                    SetTurnRight(90);
+                    Scan();
+
+                }
+                for (int i = 0; i < 5; i++)
+                {
+                    Ahead(100);
+                    SetTurnLeft(90);
+                    Scan();
+                }
+
+
             }
             
         }
@@ -38,55 +43,51 @@ namespace MarcusVidal.Robo
 
         public override void OnBulletHit(BulletHitEvent evnt)
         {
-            base.OnBulletHit(evnt);
+            Back(100);
+            TurnLeft(45);
+            Ahead(100);
+            Scan();
         }
 
-        public override void OnScannedRobot(ScannedRobotEvent evnt)
+        public override void OnScannedRobot(ScannedRobotEvent evento)
         {
-            double anguloInimigo = evnt.Bearing;
+            double anguloInimigo = Utils.NormalRelativeAngleDegrees(evento.Bearing + Heading - GunHeading);
 
-            Fire(1);
+            
+            TurnGunRight(anguloInimigo);
+
+            Fire(setaInsensidade(Energy));           
+            
             Scan();
-
-            if(GunHeading > anguloInimigo && (GunHeading - anguloInimigo) <= 180)
-            {
-                TurnGunLeft(GunHeading - anguloInimigo);
-                Fire(1);
-            }
-
-            if(GunHeading < anguloInimigo && (GunHeading + anguloInimigo) <= 180)
-            {
-                TurnGunRight(GunHeading + anguloInimigo);
-                Fire(1);
-            }
-
-            Scan();
-
         }
 
         public override void OnHitRobot(HitRobotEvent evento)
         {
-            if(evento.Bearing < 180)
-            {
-                TurnGunRight(evento.Bearing);
-            }
-            else
-            {
-                TurnGunLeft(evento.Bearing);
-            }
-            
+            double anguloInimigo = Utils.NormalRelativeAngleDegrees(evento.Bearing + Heading - GunHeading);
+
+            TurnGunRight(anguloInimigo);
+
             Fire(3);
 
         }
 
-        public int detectaEnergia(int energiaInimigo) {
+        public int setaInsensidade(double energia) {
 
             //TODO fazer comparações para retornar a intensidade do tiro
 
             int resultado = 0;
 
+            if (energia < 3)
+            {
+                resultado = 3;
+            }
+            else {
+                resultado = 1;
+            }
+
             return resultado;
         }
 
+  
     }
 }
