@@ -31,3 +31,4 @@ C:\Users\mvidal\source\repos\Robot_MarcusVidal\MarcusVidal.Robot\obj\Debug\netst
 C:\Users\mvidal\source\repos\Robot_MarcusVidal\MarcusVidal.Robot\obj\Debug\netstandard2.0\MarcusVidal.Robo.dll
 C:\Users\mvidal\source\repos\Robot_MarcusVidal\MarcusVidal.Robot\obj\Debug\netstandard2.0\MarcusVidal.Robo.pdb
 C:\Users\mvidal\source\repos\Robot_MarcusVidal\MarcusVidal.Robot\obj\Debug\netstandard2.0\MarcusVidal.Robot.csprojAssemblyReference.cache
+C:\DEV\Robot_MarcusVidal\MarcusVidal.Robot\obj\Debug\netstandard2.0\MarcusVidal.Robot.csprojAssemblyReference.cache

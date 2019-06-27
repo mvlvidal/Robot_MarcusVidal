@@ -14,7 +14,7 @@ namespace MarcusVidal.Robo
 
         public override void Run()
         {
-            //Seta as cpres do Robô: corpo, arma, radar, bala e faixa do radar
+            //Seta as cores do Robô: corpo, arma, radar, bala e faixa do radar
             SetColors(Color.Black, Color.Yellow, Color.Yellow, Color.OrangeRed, Color.White);
                   
 
@@ -76,7 +76,7 @@ namespace MarcusVidal.Robo
             TurnGunRight(anguloInimigo);
             Stop();
 
-            //Atira no inigimo de acordo com a energia do robô
+            //Atira no inimigo de acordo com a energia do robô
             Fire(setaInsensidade(Energy));
 
             Ahead(5);
