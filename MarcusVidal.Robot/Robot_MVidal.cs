@@ -98,7 +98,9 @@ namespace MarcusVidal.Robo
             TurnGunRight(anguloInimigo);
 
             //Atira no inigimo de acordo com a energia do robô
-            FireBullet(setaInsensidade(Energy));
+            SetFireBullet(setaInsensidade(Energy));
+
+            Scan();
 
         }
 
