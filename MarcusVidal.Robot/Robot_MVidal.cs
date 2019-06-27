@@ -97,7 +97,7 @@ namespace MarcusVidal.Robo
             //Gira a rma do robô para a direção do inimigo da colisão utilizando o seu angulo relativo colhido
             TurnGunRight(anguloInimigo);
 
-            //Atira no inigimo de acordo com a energia do robô
+            //Atira no inimigo de acordo com a energia do robô
             SetFireBullet(setaInsensidade(Energy));
 
             Scan();
